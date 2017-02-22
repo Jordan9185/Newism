@@ -4,4 +4,19 @@ class ProductController < ApplicationController
 		
 		
 	end
+
+	def purchase
+		
+		
+	end
+
+	def sales
+		
+		
+	end
+
+	def return_to
+		
+		
+	end
 end
