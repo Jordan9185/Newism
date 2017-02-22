@@ -2,4 +2,22 @@
 
 <h2>進貨</h2>
 
+<%= form_tag("/search", method: "post") do %>
+
+  <%= label_tag(:location, "進/調 貨地點") %>
+  <%= text_field_tag(:location) %> <br />
+
+  <%= label_tag(:product_class, "貨物類別:") %>
+  <%= text_field_tag(:product_class) %> <br />
+
+  <%= label_tag(:product_number, "貨物編號:") %>
+  <%= text_field_tag(:product_number) %> <br />
+
+  <%= label_tag(:product_count, "貨物數量:") %>
+  <%= text_field_tag(:product_count) %> <br />
+
+  <%= submit_tag("確認送出", data: { confirm: "確認送出?" }) %>
+  
+<% end %>
+
 <%= link_to '回首頁', product_index_path, class:"btn btn-warning btn-lg"%>
