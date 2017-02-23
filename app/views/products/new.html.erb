@@ -1,0 +1,20 @@
+  <h1>新增item</h1>
+
+  <%= form_for @product do |f| %>
+    <%= f.label :item_number, "item_number" %>
+    <%= f.text_field :item_number %> <br />
+
+    <%= f.label :item_class, "item_class" %>
+    <%= f.text_field :item_class %> <br />
+
+    <%= f.label :item_count, "item_count" %>
+    <%= f.text_field :item_count %> <br />
+
+    <%= f.label :item_value, "item_value" %>
+    <%= f.text_area :item_value %> <br />
+
+    <%= f.submit %>
+  <% end %>
+
+  <br />
+  <%= link_to 'return to index', products_path %>

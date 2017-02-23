@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root :to => "product#index"
-  resources :product
+  root :to => "products#index"
+  resources :products
 
-  get "/purchase" , to: "product#purchase"
-  get "/sales" , to: "product#sales"
-  get "/return_to" , to: "product#return_to"
+  get "/purchase" , to: "products#purchase"
+  get "/sales" , to: "products#sales"
+  get "/return_to" , to: "products#return_to"
 end
